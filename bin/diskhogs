@@ -1,7 +1,8 @@
 #!/bin/sh
 # Stolen from an informit article of Dave Taylor with some modifications.
+# Betik doğru çalışmıyor
 
-BASE="${1:-.}"
+BASE="${1:-.}" # $1 dolu ise onu kullan değilse bulunduğun dizini al.
 
 if [ ! -d "$BASE" ]; then
 	echo >&2 "No such directory '$BASE'!"
